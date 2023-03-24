@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+  database:
+    image: "postgres:latest"
+    container_name: "cars_api_database"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "cars_api_db"

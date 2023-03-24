@@ -1,0 +1,7 @@
+CREATE TABLE car (
+    id SERIAL PRIMARY KEY,
+    make VARCHAR(255) NOT NULL,
+    model VARCHAR(255) NOT NULL,
+    numberplate VARCHAR(255) NOT NULL,
+    user_id INTEGER REFERENCES "user"(id) ON DELETE CASCADE
+);

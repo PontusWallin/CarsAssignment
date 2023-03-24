@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cars_api_db
+    username: postgres
+    password: password
+  jpa:
+    show-sql: true
+  flyway:
+    enabled: true
+    validate-on-migrate: true
